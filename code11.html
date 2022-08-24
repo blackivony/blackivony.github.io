@@ -95,13 +95,13 @@ function clock() {
     var today = new Date();
 hrs = today.getHours();
 if (hrs < 6)
-        greet = 'Its too late, go to sleep >:(  ';
+        greet = 'Its too late, go to sleep!  ';
     else if (hrs >= 6 && hrs < 12)
-        greet = 'Good Morning Maria :)';
+        greet = 'Good Morning, Maria';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon Maria :)';
+        greet = 'Good Afternoon, Maria';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening Maria :)';
+        greet = 'Good Evening, Maria';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
