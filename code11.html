@@ -92,6 +92,7 @@ document.getElementById('date').innerHTML = today.toDateString();
 
 
 function clock() {
+    var today = new Date();
 hrs = today.getHours();
 if (hrs < 12)
         greet = 'Good Morning  ';
