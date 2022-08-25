@@ -8,7 +8,20 @@
 
     <body>
          <div class="image" id="image"></div>
-        
+        var today = new Date();
+        hrs = today.getHours();
+     if (hrs < 6)
+            <img src= "https://i.imgur.com/JeZ1rj8.png"
+            alt="4" width="800" height="450"> 
+        else if (hrs >= 6 && hrs < 12)
+           <img src= "https://i.imgur.com/aI01Yo4.png"
+            alt="3" width="800" height="450"> 
+        else if (hrs >= 12 && hrs <= 17)
+            <img src= "https://i.imgur.com/dopMHAn.png"
+            alt="2" width="800" height="450">
+        else if (hrs >= 17 && hrs <= 24)
+           <img src= "https://i.imgur.com/IHO2QO2.png"
+            alt="1" width="800" height="450">
         <script>
             
           function volgendefoto() {
