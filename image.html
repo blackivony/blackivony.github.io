@@ -7,29 +7,30 @@
     </head>
 
     <body>
-         <div class="image" id="image"></div>
-        <img src= "image"
-            alt="4" width="800" height="450">
-        <script>
+         <img id="image" src="foto1.jpg"
+          width="800" height="450">
+        
+        <script type = "text/javascript">
+             var image = document.getElementById("image");
             
           function volgendefoto() {
             var today = new Date();
             hrs = today.getHours();
      if (hrs < 6)
-            image = "https://i.imgur.com/JeZ1rj8.png"
-           
+            image.src = "https://i.imgur.com/JeZ1rj8.png";
+        
         else if (hrs >= 6 && hrs < 12)
-            image = "https://i.imgur.com/aI01Yo4.png"
+            image.src = "https://i.imgur.com/aI01Yo4.png";
             
         else if (hrs >= 12 && hrs <= 17)
-            image = "https://i.imgur.com/dopMHAn.png"
+            image.src = "https://i.imgur.com/dopMHAn.png";
             
         else if (hrs >= 17 && hrs <= 24)
-            image = "https://i.imgur.com/IHO2QO2.png"
-            
+            image.src = "https://i.imgur.com/IHO2QO2.png";
+           
               
 // console.log(today.toLocaleTimeString());
-         document.getElementById('image').innerHTML = image;
+         
           }
          function imageGet() {
 volgendefoto();
